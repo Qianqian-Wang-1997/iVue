@@ -5,8 +5,7 @@
       <h3 class="pos21">返回</h3>
     </h2>
     <h3 class="pos22">
-      <router-link to="/home"><img src="../assets/back.png" height="18" width="18">
-      </router-link>
+      <router-link to="/home"><img src="../assets/back.png" height="18" width="18"></router-link>
       </h3>
     <h3 class="pos3"><router-link to="/MoreInfo"><img src="../assets/more_light.png" height="28" width="28"></router-link></h3>
   </div>

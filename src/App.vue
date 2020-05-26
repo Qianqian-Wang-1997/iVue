@@ -9,7 +9,7 @@
 
 <script>
 import Header from './components/Header'
-import Slider from './components/Slider-notrans'
+import Slider from './components/Scroll'
 import Tail from './components/Tail'
 
 export default {
@@ -23,9 +23,16 @@ export default {
 </script>
 
 <style>
+html,body {
+  margin:0;
+  padding:0;
+}
 #app {
-  width: 375px;
-  height: 812px;
+/*   width: 375px;
+  height: 812px; */
+  height:100%;
+  width:100%;
+  position:fixed;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,7 +41,5 @@ export default {
   padding:0;
   border:0;
   font-size:0;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 </style>

@@ -13,9 +13,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-div {
-  font-weight: normal;
-  background-image: url("../assets/background.png");
-  height: 670px;
-}
+
 </style>

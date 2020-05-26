@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from '@/components/Home'
 import MoreInfo from '@/components/MoreInfo'
+import Find from '@/components/Find'
 
 Vue.use(Router)
 
@@ -17,11 +18,11 @@ export default new Router({
       path: '/MoreInfo',
       name: 'MoreInfo',
       componet: MoreInfo
-    }/* ,
+    },
     {
-      path: '/news',
-      name: 'news',
-      component: News
-    } */
+      path: '/find',
+      name: 'Find',
+      component: Find
+    }
   ]
 })

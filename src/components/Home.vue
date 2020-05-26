@@ -29,13 +29,13 @@ div{
   height: 670px;
   width: 375px;
 }
-a {
+/* a {
   text-decoration: none;
   color:rgba(50,122,255,1);
 }
 .router-link-active {
   text-decoration: none;
-}
+} */
 paintwhite {
     color:rgb(255, 255, 255);
     vertical-align:middle;

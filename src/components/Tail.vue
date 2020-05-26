@@ -8,10 +8,10 @@
       <ul style="position:absolute; left:324px; padding:0;">我的</ul>
     </ul>
     <ul class="navipic">
-      <ul style="position:absolute; left:45px; padding:0;"><img src="../assets/A-11.png" style="height:24px"/></ul>
-      <ul style="position:absolute; left:131px; padding:0;"><img src="../assets/A-10.png" style="height:24px"/>工作</ul>
-      <ul style="position:absolute; left:221px; padding:0;"><img src="../assets/A-7.png" style="height:24px"/>活动</ul>
-      <ul style="position:absolute; left:323px; padding:0;"><img src="../assets/A-8.png" style="height:24px"/>我的</ul>
+      <ul style="position:absolute; left:45px; padding:0;">¸<router-link to="/general"><img src="../assets/A-11.png" style="height:24px"/></router-link></ul>
+      <ul style="position:absolute; left:131px; padding:0;"><router-link to="/general"><img src="../assets/A-10.png" style="height:24px"/></router-link></ul>
+      <ul style="position:absolute; left:221px; padding:0;"><router-link to="/general"><img src="../assets/A-7.png" style="height:24px"/></router-link></ul>
+      <ul style="position:absolute; left:323px; padding:0;"><router-link to="/general"><img src="../assets/A-8.png" style="height:24px"/></router-link></ul>
     </ul>
   </div>
 </template>>
