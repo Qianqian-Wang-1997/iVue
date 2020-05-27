@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from '../components/Home'
 import Mine from '../components/Mine'
+import Find from '../components/Find'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/Mine',
       name: 'Mine',
       component: Mine
+    },
+    {
+      path: '/Find',
+      name: 'Find',
+      component: Find
     }
   ]
 })

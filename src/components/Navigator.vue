@@ -8,7 +8,7 @@
       <h3 class="pos2"><a href="/general">党委概况</a></h3>
       <h3 class="pos3"><router-link to="/moment">党委动态</router-link></h3>
       <h3 class="pos4"><router-link to="/bulletboard">通知公示</router-link></h3>
-      <h3 class="find"><router-link to="/find"><img src="../assets/find.png" height="25" width="25"></router-link></h3>
+      <h3 class="find"><router-link id="Find" to="/Find"><img src="../assets/find.png" height="25" width="25"></router-link></h3>
     </h2>
   </div>
 </template>
@@ -79,7 +79,7 @@ h3.pos4 {
 h3.find {
   position: absolute;
   left: 330px;
-  top: 16px;
+  top: 10px;
   margin:0;
 }
 h4 {

@@ -26,7 +26,7 @@ export default {
       personInfo: [
         {
           id:0,
-          headpic:"meme1.jpeg",
+          headpic:"meme5.jpeg",
           name: '月亮',
           relation: '党员',
           birthday: '1990-10-25'
@@ -47,8 +47,8 @@ export default {
   position: absolute;
   top: 88px;
   width:375px;
-  height:523px;
-/*   background-color: aqua; */
+  height:724px;
+  background-color: rgba(243, 243, 243, 0.957);
   padding:0;
   list-style-type: none;
 }
