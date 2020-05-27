@@ -2,12 +2,12 @@
   <div id="header">
     <h2 class="font">
       <h3 class="pos1">i党建</h3>
-      <h3 class="pos21">返回</h3>
+      <h3 class="pos2-1">返回</h3>
     </h2>
-    <h3 class="pos22">
-      <router-link to="/home"><img src="../assets/back.png" height="18" width="18"></router-link>
+    <h3 class="pos2-2">
+      <router-link id ="Home" to="Home"><img src="../assets/back.png" height="18" width="18"></router-link>
       </h3>
-    <h3 class="pos3"><router-link to="/MoreInfo"><img src="../assets/more_light.png" height="28" width="28"></router-link></h3>
+    <h3 class="pos3"><router-link to="Home"><img src="../assets/more_light.png" height="28" width="28"></router-link></h3>
   </div>
 </template>
 
@@ -39,13 +39,13 @@ h3.pos1 {
   top: 53px;
   margin:0;
 }
-h3.pos21 {
+h3.pos2-1 {
   position: absolute;
   left: 20px;
   top: 53px;
   margin:0;
 }
-h3.pos22 {
+h3.pos2-2 {
   position: absolute;
   left: 4px;
   top: 57px;

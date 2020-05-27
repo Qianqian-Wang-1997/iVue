@@ -2,22 +2,16 @@
   <div id="app">
     <Header></Header>
     <router-view/>
-    <Slider></Slider>
-    <Tail></Tail>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
-import Slider from './components/Scroll'
-import Tail from './components/Tail'
 
 export default {
   name: 'app',
   components: {
-    'Header': Header,
-    'Tail': Tail,
-    'Slider': Slider
+    'Header': Header
   }
 }
 </script>

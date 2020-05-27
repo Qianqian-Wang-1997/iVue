@@ -1,28 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/Home'
-import MoreInfo from '@/components/MoreInfo'
-import Find from '@/components/Find'
+import Home from '../components/Home'
+import Mine from '../components/Mine'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/home',
+      path: '/Home',
       name: 'Home',
       component: Home
     },
     {
-      path: '/MoreInfo',
-      name: 'MoreInfo',
-      componet: MoreInfo
-    },
-    {
-      path: '/find',
-      name: 'Find',
-      component: Find
+      path: '/Mine',
+      name: 'Mine',
+      component: Mine
     }
   ]
 })

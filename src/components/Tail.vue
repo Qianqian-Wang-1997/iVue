@@ -11,7 +11,7 @@
       <ul style="position:absolute; left:45px; padding:0;">¸<router-link to="/general"><img src="../assets/A-11.png" style="height:24px"/></router-link></ul>
       <ul style="position:absolute; left:131px; padding:0;"><router-link to="/general"><img src="../assets/A-10.png" style="height:24px"/></router-link></ul>
       <ul style="position:absolute; left:221px; padding:0;"><router-link to="/general"><img src="../assets/A-7.png" style="height:24px"/></router-link></ul>
-      <ul style="position:absolute; left:323px; padding:0;"><router-link to="/general"><img src="../assets/A-8.png" style="height:24px"/></router-link></ul>
+      <ul style="position:absolute; left:323px; padding:0;"><router-link id="Mine" to="/Mine"><img src="../assets/A-8.png" style="height:24px"/></router-link></ul>
     </ul>
   </div>
 </template>>
