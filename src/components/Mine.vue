@@ -12,7 +12,7 @@
       <div class="relation-item">{{item.relation}}</div>
       <div class="birthday-item">{{item.birthday}}</div>
     </li>
-    <Tail style="position:relative;top:563px;"></Tail>
+    <Tail></Tail>
   </ul>
   
 </template>

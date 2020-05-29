@@ -2,7 +2,7 @@
   "name": "vuetest",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "zhoudeliang <deliang.zhou@xfruit.cn>",
+  "author": "qianqianwang",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -66,6 +66,7 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
