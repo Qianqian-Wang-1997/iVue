@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'Find',
+  name: 'find',
   data() {
     return {
         searchQuery: null,

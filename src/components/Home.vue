@@ -3,7 +3,7 @@
     <Navigator></Navigator>
     <Slider></Slider>
     <NewsList></NewsList>
-    <Tail></Tail>
+    <!-- <Tail></Tail> -->
   </div>
 </template>
 
@@ -27,5 +27,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+#home {
+  position:absolute;
+  height:724px;
+  width:376px;
+  top:88px;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: 375px 670px;
+}
 </style>

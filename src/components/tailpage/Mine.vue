@@ -7,18 +7,18 @@
       <div class="birthday">政治生日</div>
     </li>
     <li class="para" v-for="item in personInfo" :key="item.id">
-      <div class="headpic-item"><img :src="require(`../assets/${item.headpic}`)" style="width:44px;border-radius:50%"></div>
+      <div class="headpic-item"><img :src="require(`../../assets/${item.headpic}`)" style="width:44px;border-radius:50%"></div>
       <div class="name-item">{{item.name}}</div>
       <div class="relation-item">{{item.relation}}</div>
       <div class="birthday-item">{{item.birthday}}</div>
     </li>
-    <Tail></Tail>
+    <!-- <Tail></Tail> -->
   </ul>
   
 </template>
 
 <script>
-import Tail from './Tail'
+import Tail from '../Tail'
 export default {
   name: 'Mine',
   data() {
@@ -37,7 +37,6 @@ export default {
   components: {
     'Tail': Tail
   }
-  
 }
 </script>
 

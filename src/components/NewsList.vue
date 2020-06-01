@@ -68,10 +68,9 @@ export default {
 <style scoped>
 .news-list {
   position:absolute;
-  top:338px;
+  top:251px;
   width:375px;
   height: 408px;
-/*   background-color: rgb(194, 194, 245); */
   padding: 20px;
   overflow:scroll;
 }
@@ -79,11 +78,7 @@ export default {
  position:relative;
  top:19px;
  height:102px;
-/*  background-color: aquamarine; */
 }
-/* .item-link {
-
-} */
 .news-headline {
   position: relative;
   width:233px;

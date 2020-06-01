@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .scroll-wrap{
   position:absolute;
-  top: 135px;
+  top: 49px;
   width: 375px;
   height: 202px;
   overflow: hidden;
@@ -80,7 +80,7 @@ ul.pos3{
 
 .dots{
   position: absolute;
-  top:300px;
+  top:215px;
   width:375px;
   height:38px;
   background:rgba(0,0,0,0.6);

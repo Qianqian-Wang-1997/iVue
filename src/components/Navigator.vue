@@ -1,100 +1,79 @@
 <template>
-  <div id="Navigator">
-    <h4></h4>
-    <h2 class="newsback">
-      <router-link to="/news" tag="paintwhite">NEWS</router-link>
-    </h2>
-    <h2 class="elsefront">
-      <h3 class="pos2"><a href="/general">党委概况</a></h3>
-      <h3 class="pos3"><router-link to="/moment">党委动态</router-link></h3>
-      <h3 class="pos4"><router-link to="/bulletboard">通知公示</router-link></h3>
-      <h3 class="find"><router-link id="Find" to="/Find"><img src="../assets/find.png" height="25" width="25"></router-link></h3>
-    </h2>
-  </div>
+    <div id="navBar">
+        <div class='nav_item' v-for='item in navData' :key=item.index @click.stop='itemClick(item)' :class="{active: selected == item.route}">
+            <p class='nav_name'>{{item.name}}</p>
+        </div>
+        <router-link id="Find" to="/Find"><img src="../assets/find.png" height="25" width="25" style="position:relative; right:0"></router-link>
+    </div>
+    
 </template>
 
 <script>
 export default {
-  name: 'Navigator'
+    name: 'Nav',
+    data () {
+        return {
+            navData: [
+              {name: 'NEWS', class: 'home', route: 'home'},
+              {name: '党委概况', class: 'general', route: 'general'},
+              {name: '党委动态', class: 'moment', route: 'moment'},
+              {name: '通知公示', class: 'bullet', route: 'bullet'}
+            ],
+            selected: 'home'
+        }
+    },
+    watch: {
+        $route (val) {
+            this.init()
+        }
+    },
+    methods: {
+        init () {
+            if (this.$route.name === 'home' || this.$route.name === 'general' || this.$route.name === 'moment' || this.$route.name === 'bullet') {
+                this.selected = this.$route.name
+            }
+        },
+        itemClick(item) {
+            this.$router.push({name: item.route})
+            this.selected = item.route
+        }
+    }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-div{
-  position: absolute;
-  top:88px;
-  background-image: url("../assets/background.png");
-  background-size: 375px 670px;
-  height: 670px;
-  width: 375px;
-}
-paintwhite {
-    color:rgb(255, 255, 255);
-    vertical-align:middle;
-}
-h2.newsback {
-  position: absolute;
-  top: 16px;
-  left: 19px;
-  color:rgb(255, 255, 255);
-  width:48px;
-  height:20px;
-
-  font-size: 12px;
-  line-height:17px;
-  background:linear-gradient(270deg,rgba(81,118,248,1) 0%,rgba(86,197,224,1) 100%);
-  text-align: center;
-  margin:0;
-}
-h2.elsefront {
-  position: absolute;
-  width:375px;
-  height:20px;
-  font-size:14px;
-  font-family:PingFangSC-Medium,PingFang SC;
-  font-weight:500;
-  color:rgba(50,122,255,1);
-  line-height:18px;
-  margin:0;
-}
-h3.pos2 {
-  position: absolute;
-  left: 86px;
-  top: 16px;
-  margin:0;
-}
-h3.pos3 {
-  position: absolute;
-  left:168px;
-  top: 16px;
-  margin:0;
-}
-h3.pos4 {
-  position: absolute;
-  left: 250px;
-  top: 16px;
-  margin:0;
-}
-h3.find {
-  position: absolute;
-  left: 330px;
-  top: 10px;
-  margin:0;
-}
-h4 {
-  position: absolute;
-  width:48px;
-  height:3px;
-  background:linear-gradient(90deg,rgba(86,194,225,1) 0%,rgba(81,128,244,1) 100%);
-  left:19px;
-  top:44px;
-}
-a {
-  text-decoration: none;
-  color:rgba(50,122,255,1);
-}
-.router-link-active {
-  text-decoration: none;
+<style scoped lang='stylus'>
+#navBar {
+    position: absolute;
+    left: 0px;
+    right: 19px;
+    top: 0px;
+    height: 48px;
+    z-index: 999;
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 16px 0;
+  /*   overflow: hidden; */
+    .nav_item {
+        flex: 1;
+        /* wi */
+        .nav_name {
+          width:64px;
+            font-size:14px;
+            font-family:PingFangSC-Medium,PingFang SC;
+            font-weight:500;
+            color:rgba(50,122,255,1);
+            line-height:20px;
+            margin:0;
+            padding-bottom:10px;
+            text-align : center;
+        }
+    }
+    .nav_item.active {
+        .nav_name {
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg,rgba(86,194,225,1) 0%,rgba(81,128,244,1) 100%);
+            border-image-slice: 10;
+        }
+    }
 }
 </style>

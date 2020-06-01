@@ -40,9 +40,9 @@ export default {
 }
 </script>
 
-<style lang='stylus'>
+<style scoped lang='stylus'>
 #tailBar {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0px;

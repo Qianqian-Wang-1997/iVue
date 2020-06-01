@@ -2,16 +2,19 @@
   <div id="app">
     <Header></Header>
     <router-view/>
+    <Tail></Tail>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Tail from './components/Tail'
 
 export default {
   name: 'app',
   components: {
-    'Header': Header
+    'Header': Header,
+    'Tail': Tail
   }
 }
 </script>
