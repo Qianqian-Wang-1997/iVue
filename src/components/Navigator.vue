@@ -46,7 +46,7 @@ export default {
     position: absolute;
     left: 0px;
     right: 19px;
-    top: 0px;
+    top: 88px;
     height: 48px;
     z-index: 999;
     display: flex;

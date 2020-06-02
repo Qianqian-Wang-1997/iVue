@@ -1,20 +1,23 @@
 <template>
   <div id="app">
     <Header></Header>
+    <Navigator v-if="!$route.meta.showNavi"></Navigator>
     <router-view/>
-    <Tail></Tail>
+    <Tail v-if="!$route.meta.showTail"></Tail>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import Tail from './components/Tail'
+import Navigator from './components/Navigator'
 
 export default {
   name: 'app',
   components: {
     'Header': Header,
-    'Tail': Tail
+    'Tail': Tail,
+    'Navigator': Navigator
   }
 }
 </script>

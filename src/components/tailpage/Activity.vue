@@ -1,13 +1,13 @@
 <template>
-  <tail/>  
+   <home></home>
 </template>
 
 <script>
-import Tail from '../Tail'
+import Home from '../Home'
 export default {
   name:'activity',
   components: {
-    'Tail': Tail
+    'Home': Home
   }
 }
 </script>

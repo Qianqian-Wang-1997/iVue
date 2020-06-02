@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <Navigator></Navigator>
+<!--     <Navigator></Navigator> -->
     <Slider></Slider>
     <NewsList></NewsList>
     <!-- <Tail></Tail> -->

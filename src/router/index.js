@@ -13,6 +13,8 @@ import Work from '../components/tailpage/Work'
 import Activity from '../components/tailpage/Activity'
 
 import General from '../components/navpage/General'
+import Moment from '../components/navpage/Moment'
+import Bullet from '../components/navpage/Bullet'
 
 Vue.use(Router)
 
@@ -26,12 +28,19 @@ export default new Router({
     {
       path: '/mine',
       name: 'mine',
-      component: Mine
+      component: Mine,
+      meta: {
+        showNavi:true
+      }
     },
     {
       path: '/find',
       name: 'find',
-      component: Find
+      component: Find,
+      meta: {
+        showTail: true,
+        showNavi: true
+      }
     },
     {
       path: '/work',
@@ -47,6 +56,16 @@ export default new Router({
       path: '/general',
       name: 'general',
       component: General
+    },
+    {
+      path: '/moment',
+      name: 'moment',
+      component: Moment
+    },
+    {
+      path: '/bullet',
+      name: 'bullet',
+      component: Bullet
     }
   ]
 })
