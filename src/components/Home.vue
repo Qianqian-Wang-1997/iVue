@@ -1,9 +1,7 @@
 <template>
   <div id="home">
-<!--     <Navigator></Navigator> -->
-    <Slider></Slider>
+    <Slider v-if="!$route.meta.showScroll"></Slider>
     <NewsList></NewsList>
-    <!-- <Tail></Tail> -->
   </div>
 </template>
 
@@ -20,7 +18,7 @@ export default {
     'Tail': Tail,
     'Slider': Slider,
     'NewsList': NewsList
-  }
+  },
   
 }
 </script>

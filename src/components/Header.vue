@@ -19,7 +19,8 @@ export default {
 
 <style scoped>
 div {
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   width: 375px;
   height: 88px;
   background-color: rgba(73,119,189,1);

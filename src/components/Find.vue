@@ -2,7 +2,6 @@
   <div class="Find">
     
     <div class="search-all">
-      <!--  <ul class="search-wrapper panel-heading col-xs-12"> -->
           <input 
             class="form-control" 
             type="search"
@@ -17,8 +16,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-     <!--    </ul>  -->                            
+        </div>                         
     </div>
   </div>
 </template>

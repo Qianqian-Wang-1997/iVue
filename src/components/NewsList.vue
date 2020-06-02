@@ -68,10 +68,11 @@ export default {
 <style scoped>
 .news-list {
   position:absolute;
-  top:251px;
+  top:254px;
+  left: 20px;
   width:375px;
-  height: 408px;
-  padding: 20px;
+  height: 700px;
+  padding: 0px;
   overflow:scroll;
 }
 .news-item {

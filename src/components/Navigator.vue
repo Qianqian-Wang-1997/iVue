@@ -1,7 +1,10 @@
 <template>
     <div id="navBar">
-        <div class='nav_item' v-for='item in navData' :key=item.index @click.stop='itemClick(item)' :class="{active: selected == item.route}">
-            <p class='nav_name'>{{item.name}}</p>
+        <div class='nav_item' 
+              v-for='item in navData' 
+              :key=item.index @click.stop='itemClick(item)' 
+              :class="{active: selected == item.route}"> 
+            <p class='nav_name' :class="{'news_back': item.name == 'NEWS'}">{{item.name}}</p>
         </div>
         <router-link id="Find" to="/Find"><img src="../assets/find.png" height="25" width="25" style="position:relative; right:0"></router-link>
     </div>
@@ -55,18 +58,31 @@ export default {
   /*   overflow: hidden; */
     .nav_item {
         flex: 1;
-        /* wi */
         .nav_name {
           width:64px;
-            font-size:14px;
-            font-family:PingFangSC-Medium,PingFang SC;
-            font-weight:500;
-            color:rgba(50,122,255,1);
-            line-height:20px;
-            margin:0;
-            padding-bottom:10px;
-            text-align : center;
+          font-size:14px;
+          font-family:PingFangSC-Medium,PingFang SC;
+          font-weight:500;
+          color:rgba(50,122,255,1);
+          line-height:20px;
+          margin:0;
+          padding-bottom:10px;
+          text-align : center;
         }
+        .nav_name.news_back {
+          /* background-clip : content-box; */
+          position: relative;
+          top:1px;
+          left: 19px;
+          width:48px;
+          color: rgba(255, 255, 255, 1);
+          font-size:12px;
+          line-height:17px;
+          
+          background : linear-gradient(270deg,rgba(81,118,248,1) 0%,rgba(86,197,224,1) 100%) no-repeat;
+          background-size : 48px 20px;
+          }
+
     }
     .nav_item.active {
         .nav_name {

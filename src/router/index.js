@@ -55,7 +55,10 @@ export default new Router({
     {
       path: '/general',
       name: 'general',
-      component: General
+      component: General,
+      meta: {
+        showScroll: true
+      }
     },
     {
       path: '/moment',
