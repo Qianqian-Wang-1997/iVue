@@ -1,10 +1,14 @@
-# vuetest
+# 入门Vue
 
-> A Vue.js project
+![161591068193_.pic](/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/c460421cc7dc2ae8415ff3119936a8ab/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/161591068193_.pic.jpg)
+
+![171591068193_.pic](/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/c460421cc7dc2ae8415ff3119936a8ab/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/171591068193_.pic.jpg)
+
+![181591068193_.pic](/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/c460421cc7dc2ae8415ff3119936a8ab/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/191591068193_.pic.jpg)
 
 ## Build Setup
 
-``` bash
+```
 # install dependencies
 npm install
 
@@ -27,4 +31,6 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 说明
+
+（六天速成 可以说是非常粗糙了
